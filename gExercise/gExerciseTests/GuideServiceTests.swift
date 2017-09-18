@@ -28,7 +28,8 @@ class GuideServiceTests: XCTestCase {
     
     func test_Service_Provides_Correct_URL() {
         
-        XCTAssert(service.baseUrlString == "https://guidebook.com/service/v2/upcomingGuides/")
+        //removed actual url 
+        XCTAssert(service.baseUrlString == "")
     }
     
     
