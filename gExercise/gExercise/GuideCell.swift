@@ -24,7 +24,13 @@ class GuideCell: UICollectionViewCell {
     
     var venue: [String:String] = [:] {
         didSet {
-            venueLabel?.text = venue["city"]! + "," + venue["state"]!
+            
+//            guard (venue["city"]?.isEmpty)! && (venue["state"]?.isEmpty)!
+//                else {
+//                    venueLabel?.text = ""
+//                    return
+//            }
+//            venueLabel?.text = venue["city"]! + "," + venue["state"]!
         }
     }
     

@@ -7,7 +7,11 @@
 //
 
 import Foundation
+
 //import Result  see comment below for time not bringing in Result framework
+
+
+//protocol used for mocking in tests
 
 protocol GuideServiceProtocol {
     
@@ -15,16 +19,16 @@ protocol GuideServiceProtocol {
     
 }
 
-class GuideService {
+class GuideService: GuideServiceProtocol {
     
     var baseUrlString = "https://guidebook.com/service/v2/upcomingGuides/"
     
     //create some type of Result where values and errors are returned upwards
     //like so Result<[Guide], NetworkError>
     
-    func getGuides(query: String, completion: @escaping ([Guide]) -> ()) {
+    func getGuides(completion: @escaping ([Guide]) -> ()) {
         
-        guard  let url = URL(string: baseUrlString + query)
+        guard  let url = URL(string: baseUrlString)
             else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
