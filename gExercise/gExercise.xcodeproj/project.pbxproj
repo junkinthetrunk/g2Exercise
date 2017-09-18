@@ -16,6 +16,8 @@
 		4C56092A1F700748005CE7B8 /* gExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5609291F700748005CE7B8 /* gExerciseTests.swift */; };
 		4C5609321F70075A005CE7B8 /* GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5609311F70075A005CE7B8 /* GuideTests.swift */; };
 		4C5609341F7008E6005CE7B8 /* JsonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5609331F7008E6005CE7B8 /* JsonType.swift */; };
+		4C5609361F700D05005CE7B8 /* GuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5609351F700D05005CE7B8 /* GuideService.swift */; };
+		4C5609381F700D25005CE7B8 /* GuideServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5609371F700D25005CE7B8 /* GuideServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		4C56092B1F700748005CE7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5609311F70075A005CE7B8 /* GuideTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTests.swift; sourceTree = "<group>"; };
 		4C5609331F7008E6005CE7B8 /* JsonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonType.swift; sourceTree = "<group>"; };
+		4C5609351F700D05005CE7B8 /* GuideService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideService.swift; sourceTree = "<group>"; };
+		4C5609371F700D25005CE7B8 /* GuideServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				4C56090D1F70016F005CE7B8 /* AppDelegate.swift */,
 				4C56091F1F7006B6005CE7B8 /* GuidesCollectionView.swift */,
 				4C5609211F70071A005CE7B8 /* Guide.swift */,
+				4C5609351F700D05005CE7B8 /* GuideService.swift */,
 				4C5609111F70016F005CE7B8 /* Main.storyboard */,
 				4C5609141F70016F005CE7B8 /* Assets.xcassets */,
 				4C5609161F70016F005CE7B8 /* LaunchScreen.storyboard */,
@@ -101,6 +106,7 @@
 				4C56092B1F700748005CE7B8 /* Info.plist */,
 				4C5609311F70075A005CE7B8 /* GuideTests.swift */,
 				4C5609331F7008E6005CE7B8 /* JsonType.swift */,
+				4C5609371F700D25005CE7B8 /* GuideServiceTests.swift */,
 			);
 			path = gExerciseTests;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5609361F700D05005CE7B8 /* GuideService.swift in Sources */,
 				4C5609221F70071A005CE7B8 /* Guide.swift in Sources */,
 				4C56090E1F70016F005CE7B8 /* AppDelegate.swift in Sources */,
 				4C5609201F7006B6005CE7B8 /* GuidesCollectionView.swift in Sources */,
@@ -220,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5609381F700D25005CE7B8 /* GuideServiceTests.swift in Sources */,
 				4C5609321F70075A005CE7B8 /* GuideTests.swift in Sources */,
 				4C56092A1F700748005CE7B8 /* gExerciseTests.swift in Sources */,
 				4C5609341F7008E6005CE7B8 /* JsonType.swift in Sources */,
