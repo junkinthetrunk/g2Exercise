@@ -25,12 +25,14 @@ class GuideCell: UICollectionViewCell {
     var venue: [String:String] = [:] {
         didSet {
             
-//            guard (venue["city"]?.isEmpty)! && (venue["state"]?.isEmpty)!
-//                else {
-//                    venueLabel?.text = ""
-//                    return
-//            }
-//            venueLabel?.text = venue["city"]! + "," + venue["state"]!
+            guard venue.count > 0
+                else {
+                    venueLabel.text = ""
+                    return 
+            }
+            
+            //would add case for having one or the other with the comma
+            venueLabel?.text = (venue["city"] ?? "") + "," + (venue["state"] ?? "")
         }
     }
     
@@ -45,7 +47,6 @@ class GuideCell: UICollectionViewCell {
         didSet {
             if !imageUrl.isEmpty,
                 let url = URL(string: imageUrl) {
-                //guideImageView.downloadImageFrom(url: url, contentMode: .scaleAspectFit)
                 imageView?.downloadImageFrom(url: url, contentMode: .scaleAspectFit)
             }
         }

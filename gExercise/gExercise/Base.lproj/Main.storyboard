@@ -32,13 +32,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="237" height="194"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Depeche Mode Concert" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-ma-sTr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Depeche Mode Concert" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-ma-sTr">
                                             <rect key="frame" x="37.5" y="12" width="162" height="17"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fort Lauderdale, FL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZl-VT-3vF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Fort Lauderdale, FL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZl-VT-3vF">
                                             <rect key="frame" x="64" y="34" width="110.5" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -52,7 +52,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sep 16, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-KB-SNS">
-                                            <rect key="frame" x="80" y="151.5" width="77.5" height="16"/>
+                                            <rect key="frame" x="80" y="144.5" width="77.5" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -62,13 +62,14 @@
                                 <constraints>
                                     <constraint firstItem="gCN-KB-SNS" firstAttribute="centerX" secondItem="c7F-fR-l5e" secondAttribute="centerX" id="5IP-1p-vxW"/>
                                     <constraint firstItem="tpm-nA-Ku6" firstAttribute="centerX" secondItem="c7F-fR-l5e" secondAttribute="centerX" id="71D-yY-mPe"/>
-                                    <constraint firstItem="gCN-KB-SNS" firstAttribute="top" secondItem="tpm-nA-Ku6" secondAttribute="bottom" constant="9" id="Fjo-pR-Cvd"/>
+                                    <constraint firstItem="gCN-KB-SNS" firstAttribute="top" secondItem="tpm-nA-Ku6" secondAttribute="bottom" constant="2" id="Fjo-pR-Cvd"/>
                                     <constraint firstItem="IZl-VT-3vF" firstAttribute="centerX" secondItem="c7F-fR-l5e" secondAttribute="centerX" id="HuS-2s-fsD"/>
                                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2NM-ma-sTr" secondAttribute="trailing" constant="14" id="TNY-Ok-Eup"/>
+                                    <constraint firstItem="IZl-VT-3vF" firstAttribute="top" relation="lessThanOrEqual" secondItem="2NM-ma-sTr" secondAttribute="bottom" priority="994" constant="5" id="XUf-Ic-8Rg"/>
                                     <constraint firstItem="2NM-ma-sTr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c7F-fR-l5e" secondAttribute="leadingMargin" constant="14" id="bed-5I-8tW"/>
-                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="gCN-KB-SNS" secondAttribute="bottom" constant="12" id="bhu-fK-bsx"/>
+                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="gCN-KB-SNS" secondAttribute="bottom" constant="10" id="bhu-fK-bsx"/>
                                     <constraint firstItem="2NM-ma-sTr" firstAttribute="top" secondItem="c7F-fR-l5e" secondAttribute="topMargin" constant="4" id="dfb-c2-6uI"/>
-                                    <constraint firstItem="IZl-VT-3vF" firstAttribute="top" secondItem="2NM-ma-sTr" secondAttribute="bottom" constant="5" id="rPp-dw-j2W"/>
+                                    <constraint firstItem="IZl-VT-3vF" firstAttribute="top" secondItem="2NM-ma-sTr" secondAttribute="bottom" priority="994" constant="5" id="rPp-dw-j2W"/>
                                     <constraint firstItem="2NM-ma-sTr" firstAttribute="centerX" secondItem="c7F-fR-l5e" secondAttribute="centerX" id="u8x-YV-XWV"/>
                                     <constraint firstItem="tpm-nA-Ku6" firstAttribute="top" secondItem="IZl-VT-3vF" secondAttribute="bottom" constant="6" id="uU3-RS-QDq"/>
                                 </constraints>
