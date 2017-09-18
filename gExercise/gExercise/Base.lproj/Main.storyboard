@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuideCell" id="c7F-fR-l5e">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuideCell" id="c7F-fR-l5e" customClass="GuideCell" customModule="gExercise" customModuleProvider="target">
                                 <rect key="frame" x="69" y="0.0" width="237" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -70,6 +70,12 @@
                                     <constraint firstItem="2NM-ma-sTr" firstAttribute="centerX" secondItem="c7F-fR-l5e" secondAttribute="centerX" id="u8x-YV-XWV"/>
                                     <constraint firstItem="tpm-nA-Ku6" firstAttribute="top" secondItem="IZl-VT-3vF" secondAttribute="bottom" constant="6" id="uU3-RS-QDq"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dateLabel" destination="gCN-KB-SNS" id="CTr-GQ-sl0"/>
+                                    <outlet property="imageView" destination="tpm-nA-Ku6" id="PJt-a0-GyM"/>
+                                    <outlet property="nameLabel" destination="2NM-ma-sTr" id="vtE-EO-Rga"/>
+                                    <outlet property="venueLabel" destination="IZl-VT-3vF" id="yW8-Tj-mAp"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
