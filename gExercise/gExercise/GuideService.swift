@@ -21,7 +21,8 @@ protocol GuideServiceProtocol {
 
 class GuideService: GuideServiceProtocol {
     
-    var baseUrlString = "https://guidebook.com/service/v2/upcomingGuides/"
+    //removed actual url
+    var baseUrlString = ""
     
     //create some type of Result where values and errors are returned upwards
     //like so Result<[Guide], NetworkError>
