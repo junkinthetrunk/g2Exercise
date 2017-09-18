@@ -18,7 +18,9 @@ class GuidesController: UICollectionViewController {
         
         service.getGuides() { guides in
             self.guides = guides
-            self.collectionView?.reloadData()
+            DispatchQueue.main.async {
+                self.collectionView?.reloadData()
+            }
         }
 
     }
