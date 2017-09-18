@@ -31,14 +31,32 @@ class guideTests: XCTestCase {
     }
     
     func test_good_json_nmultiple_guides() {
+        let result = Guide().mapGuides(json: JsonType.multiple.response())
+        
+        XCTAssert(result.count == 2)
     }
 
-    func test_bad_json_missing_name_no_results() {
+    func test_bad_json_no_guides_no_results() {
+        let result = Guide().mapGuides(json: JsonType.empty.response())
+        
+        XCTAssert(result.count == 0)
         
     }
     
-    func test_bad_json_no_guides_no_results() {
+    func test_missing_venue_get_results() {
+        let result = Guide().mapGuides(json: JsonType.emptyVenue.response())
+        
+        XCTAssert(result.count == 1)
         
     }
+
+    
+    func test_bad_json_missing_name_no_results() {
+        let result = Guide().mapGuides(json: JsonType.missingName.response())
+        
+        XCTAssert(result.count == 0)
+        
+    }
+    
     
 }

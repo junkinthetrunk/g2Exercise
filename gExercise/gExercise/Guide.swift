@@ -39,17 +39,18 @@ extension Guide {
             guard 
                 let endDate = guidesJSON[index]["endDate"] as? String,
                 let name = guidesJSON[index]["name"] as? String,
-                let venue = guidesJSON[index]["venue"] as? [String:String],
                 let icon = guidesJSON[index]["icon"] as? String
                 else {
                     print ("error with recipe")
                     return guides
             }
             
+            let venue = guidesJSON[index]["venue"] as? [String:String]
+            
             var guide = Guide()
             
             guide.name = name
-            guide.venue = venue
+            guide.venue = venue ?? [:]
             guide.icon = icon
             guide.endDate = endDate
             
